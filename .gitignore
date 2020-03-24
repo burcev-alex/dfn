@@ -25,9 +25,6 @@ Thumbs.db
 /tests/selenium-server/
 /vendor/
 /log.txt
-/test*.php
 log.htm
-/codeception.*
-/composer.*
 /tr.php
 /exceptions.log
