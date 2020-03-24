@@ -6,7 +6,7 @@ class BotCest
 {
 	// логин и пароль
 	private $login = 'burzev';
-	private $password = 'burzev_G5';
+	private $password = 'burzev';
 
 	// ID курсов
 	private $course = [362, 2928, 350, 355];
