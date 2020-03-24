@@ -1,0 +1,23 @@
+# Codeception Test Suite Configuration
+#
+# Suite for acceptance tests.
+# Perform tests in browser using the WebDriver or PhpBrowser.
+# If you need both WebDriver and PHPBrowser tests - create a separate suite.
+
+actor: AcceptanceTester
+modules:
+    enabled:
+        - WebDriver
+    config:
+        WebDriver:
+            url: http://www.dfn.mdpu.org.ua
+            browser: chrome
+            restart: false
+            window_size: maximize #1024x768
+            ignoreSslErrors: true
+            wait: 10
+            capabilities:
+                unexpectedAlertBehaviour: 'accept'
+            chromeOptions:
+                args:
+                  ['disable-infobars', 'headless', 'disable-gpu', '--disable-extensions']
